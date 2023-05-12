@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,SAAS,EAAE,MAAM;EACjB,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "big-container.scss"
+    ],
+    "names": [],
+    "file": "big-container.css"
+}

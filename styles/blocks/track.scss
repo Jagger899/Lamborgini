@@ -1,0 +1,35 @@
+.track {
+  
+  background-image: url("../images/track/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 435px;
+    // margin-bottom: 250px;
+    // flex-basis: 435px;
+  }
+
+  &__img {
+    // margin: 0 auto;
+    // display: block;
+    // margin-bottom: 90px;
+    // margin-top: auto;
+    margin: auto auto 90px auto;
+  }
+}
