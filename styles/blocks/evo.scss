@@ -2,10 +2,18 @@
   font-size: 14px;
   margin-bottom: 100px;
 
+  @include on768 {
+    margin-bottom: 50px;
+  }
+
   &__dark {
     background-color: $dark-grey-color;
     padding: 100px 0 50px;
     color: $white-color;
+
+    @include on669 {
+      padding: 60px 0 40px;
+    }
   }
 
   &__inner-dark {
@@ -29,6 +37,10 @@
       top: 290px;
       left: -40px;
       position: absolute;
+
+      @include on560 {
+        display: none;
+      }
     }
   }
 
@@ -36,6 +48,10 @@
     display: flex;
     justify-content: space-between;
     // gap: 192px;
+
+    @include on669 {
+      display: block;
+    }
   }
 
   &__title {
@@ -44,6 +60,10 @@
     padding-right: 50px;
     // color: $white-color;
     text-transform: uppercase;
+
+    @include on669 {
+      margin-bottom: 20px;
+    }
   }
 
   &__description-dark {
@@ -63,6 +83,10 @@
     margin: 200px auto 60px;
     position: relative;
     z-index: 2;
+
+    @include on768 {
+      margin-top: 120px;
+    }
   }
 
   &__descr-list {
@@ -70,6 +94,15 @@
     // justify-content: space-between;
     justify-content: center;
     gap: 0 65px;
+
+    @include on669 {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__descr-container {
+    margin-bottom: 15px;
   }
 
   &__descr-name {
@@ -83,6 +116,10 @@
   &__inner-light {
     padding-top: 125px;
     position: relative;
+
+    @include on768 {
+      padding-top: 75px;
+    }
     
     &::before {
       content: '';
@@ -92,6 +129,10 @@
       top: -40px;
       left: 360px;
       position: absolute;
+
+      @include on669 {
+        display: none;
+      }
     }
 
     &::after {
@@ -102,6 +143,10 @@
       top: 116px;
       left: 600px;
       position: absolute;
+
+      @include on969 {
+        display: none;
+      }
     }
   }
 
@@ -131,6 +176,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include on768 {
+      margin-top: 50px;
+    }
   }
 
   &__video-link {

@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
 
+    @include onNetbook {
+        align-items: center;
+    }
+
     &__menu-list {
         display: flex;
         column-gap: 40px;
@@ -15,10 +19,67 @@
             padding-right: 80px;
             margin-left: 10px;
         }
+
+        @include onNetbook {
+            display: none;
+        }
+    }
+
+    &__button {
+        z-index: 10;
     }
 
     &__link {
         font-size: 16px;
         color: $dark-grey-color;
+
+        @include on840 {
+            color: $white-color;
+            font-size: 3vh;
+            display: block;
+            padding: 20px 0;
+        }
+
+        @include on320 {
+            padding: 14px 0;
+        }
     }
+
+    &__menu-mobile-list {
+        display: none;
+
+        @include onNetbook {
+            display: flex;
+            gap: 0 20px;
+        }
+
+        @include on840 {
+            display: none;
+        }
+    }
+
+    &__menu-mobile-list.nav__menu-mobile-list--open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black-color;
+        height: 100vh;
+        z-index: 5;
+        text-align: center;
+        padding-top: 140px;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        z-index: 10;
+    }
+
+    // &__button {
+    //     display: none;
+
+    // }
 }

@@ -7,6 +7,10 @@
   background-size: cover;
   background-position: center;
   // background-position: bottom;
+
+  @include onNetbook {
+    background-position: left center;
+  }
   
 
   &__content {
@@ -23,6 +27,18 @@
     font-weight: 400;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
+
+    @include onNetbook {
+      font-size: 64px;
+    }
+
+    @include on560 {
+      font-size: 48px;
+    }
+
+    @include on340 {
+      font-size: 42px;
+    }
   }
 
   &__subtitle {
@@ -33,6 +49,18 @@
     margin-bottom: 10px;
     align-self: center;
     text-transform: uppercase;
+
+    @include onNetbook {
+      font-size: 42px;
+    }
+
+    @include on560 {
+      font-size: 34px;
+    }
+
+    @include on340 {
+      font-size: 30px;
+    }
   }
 
   &__subtitle-small {
@@ -40,6 +68,18 @@
     color: $gold-color;
     display: block;
     padding: 10px 0;
+
+    @include onNetbook {
+      font-size: 30px;
+    }
+
+    @include on560 {
+      font-size: 26px;
+    }
+
+    @include on340 {
+      font-size: 24px;
+    }
   }
 
   &__text {

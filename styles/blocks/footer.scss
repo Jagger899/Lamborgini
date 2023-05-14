@@ -3,10 +3,18 @@
   padding: 100px 0 80px;
   color: $white-color;
 
+  @include on768 {
+    padding: 50px 0;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
     gap: 0 20px;
+
+    @include on669 {
+      display: block;
+    }
   }
 
   &__title {
@@ -62,5 +70,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include on480 {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    @include on480 {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0 10px;
+    }
   }
 }

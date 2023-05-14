@@ -1,5 +1,53 @@
-@mixin onDesctop {
-  @media (min-width: 376px) {
+@mixin onNetbook {
+  @media (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin on969 {
+  @media (max-width: 969px) {
+    @content;
+  }
+}
+
+@mixin on840 {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
+@mixin on768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin on669 {
+  @media (max-width: 669px) {
+    @content;
+  }
+}
+
+@mixin on560 {
+  @media (max-width: 560px) {
+    @content;
+  }
+}
+
+@mixin on480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin on340 {
+  @media (max-width: 340px) {
+    @content;
+  }
+}
+
+@mixin on320 {
+  @media (max-width: 340px) {
     @content;
   }
 }

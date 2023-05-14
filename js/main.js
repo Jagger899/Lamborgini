@@ -1,11 +1,27 @@
+const menuButton = document.querySelector('.menu-button');
+const menuMobile = document.querySelector('.nav__menu-mobile-list');
+console.log(menuButton);
+
+menuButton.addEventListener('click', () => {
+    menuMobile.classList.toggle('nav__menu-mobile-list--open');
+});
+
 const swiper = new Swiper('.swiper', {
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 20,
+  
   navigation: {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
-  },
+    },
+  breakpoints: {
+      0: {
+          slidesPerView:1,
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+      }
+  }
 });
 
 let map;
